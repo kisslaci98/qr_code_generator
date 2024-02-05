@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>QR Code Generator</title>
+</head>
+<body>
+    <header>
+        <div id="header-text">
+            QR Code Generator
+        </div>
+    </header>
+    <main>
+        <p>Enter your URL below to generate a QR Code of it.</p>
+        <form id="generate-form">
+            <input type="url" placeholder="Enter the URL here" id="url">
+            <select id="size">
+                <option value="100">100x100</option>
+                <option value="200" selected>200x200</option>
+                <option value="300">300x300</option>
+                <option value="400">400x400</option>
+                <option value="500">500x500</option>
+            </select>
+            <button>Generate</button>
+        </form>
+        <div id="generated">
+        <div id="qr-code"></div>
+        </div>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
